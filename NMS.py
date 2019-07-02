@@ -68,7 +68,7 @@ def plotRectangle(boxes, scores):
         cv2.rectangle(img, (xmin[i], ymin[i]), (xmax[i],ymax[i]), linecolor, linetype)
         cv2.putText(img,scores[i], (xmin[i]+5, ymax[i]), font, 1.2, (255, 0, 0), 2)
     cv2.waitKey(0)
-    cv2.imwrite("./result/nms_pic.jpg", img)  # 存储结果图像
+    cv2.imwrite("./result/NMS_pic.jpg", img)  # 存储结果图像
 
 
 if __name__ == "__main__":
